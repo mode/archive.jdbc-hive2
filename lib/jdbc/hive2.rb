@@ -19,6 +19,12 @@ module Jdbc
     end
 
     def self.load_driver(method = :load)
+      # case version
+      # when 11
+      # when 12
+      # when :cdh5
+      # else # 11
+      # end
       driver_jar.each do |jar|
         send method, jar
       end

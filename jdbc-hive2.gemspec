@@ -1,6 +1,9 @@
+$LOAD_PATH << File.expand_path('../lib', __FILE__)
+require 'jdbc/hive2/version'
+
 Gem::Specification.new do |s|
   s.name        = 'jdbc-hive2'
-  s.version     = '0.11.0.1'
+  s.version     = Jdbc::Hive2::VERSION
   s.authors     = ['Josh Ferguson']
   s.email       = %w(josh@modeanalytics.com)
   s.homepage    = 'https://github.com/mode/jdbc-hive2'
@@ -16,6 +19,4 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
-
-  s.add_development_dependency 'sequel'
 end
