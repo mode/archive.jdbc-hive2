@@ -1,5 +1,5 @@
 $LOAD_PATH << File.expand_path('../lib', __FILE__)
-require 'jdbc/hive2/version'
+require 'jdbc/hive2'
 
 Gem::Specification.new do |s|
   s.name        = 'jdbc-hive2'
