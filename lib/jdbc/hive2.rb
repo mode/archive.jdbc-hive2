@@ -2,8 +2,8 @@ warn 'jdbc-hive2 is only for use with JRuby' if (JRUBY_VERSION.nil? rescue true)
 
 module Jdbc
   module Hive2
-    DRIVER_VERSION = '0.11.0'
-    VERSION = DRIVER_VERSION + '.1'
+    DRIVER_VERSION = '1.1.0'
+    VERSION = DRIVER_VERSION + '.0'
 
     def self.driver_jar
       %W(
